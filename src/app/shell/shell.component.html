@@ -24,6 +24,21 @@
             <span translate>About</span>
           </a>
           <mat-divider></mat-divider>
+          <a mat-list-item routerLink="/projects" routerLinkActive="active" (click)="isMobile && sidenav.close()">
+            <span translate>Projects</span>
+          </a>
+          <mat-divider></mat-divider>
+          <a mat-list-item routerLink="/blog" routerLinkActive="active" (click)="isMobile && sidenav.close()">
+            <span translate>Blog</span>
+          </a>
+          <mat-divider></mat-divider>
+          <a mat-list-item routerLink="/work" routerLinkActive="active" (click)="isMobile && sidenav.close()">
+            <span translate>Work</span>
+          </a>
+          <mat-divider></mat-divider>
+          <a mat-list-item routerLink="/school" routerLinkActive="active" (click)="isMobile && sidenav.close()">
+            <span translate>School</span>
+          </a>
         </mat-list>
       </nav>
     </mat-sidenav>

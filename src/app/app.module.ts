@@ -13,6 +13,10 @@ import { ShellModule } from './shell/shell.module';
 import { AboutModule } from './about/about.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { WorkModule } from './work/work.module';
+import { BlogModule } from './blog/blog.module';
+import { ProjectsModule } from './projects/projects.module';
+import { SchoolModule } from './school/school.module';
 
 @NgModule({
   imports: [
@@ -27,6 +31,10 @@ import { AppRoutingModule } from './app-routing.module';
     ShellModule,
     HomeModule,
     AboutModule,
+    WorkModule,
+    BlogModule,
+    ProjectsModule,
+    SchoolModule,
     AppRoutingModule, // must be imported as the last module as it contains the fallback route
   ],
   declarations: [AppComponent],
