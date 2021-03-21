@@ -15,30 +15,106 @@
       </mat-toolbar>
       <nav>
         <mat-list>
-          <mat-divider></mat-divider>
-          <a mat-list-item routerLink="/home" routerLinkActive="active" (click)="isMobile && sidenav.close()">
-            <span translate>Home</span>
-          </a>
-          <mat-divider></mat-divider>
-          <a mat-list-item routerLink="/about" routerLinkActive="active" (click)="isMobile && sidenav.close()">
-            <span translate>About</span>
-          </a>
-          <mat-divider></mat-divider>
-          <a mat-list-item routerLink="/projects" routerLinkActive="active" (click)="isMobile && sidenav.close()">
-            <span translate>Projects</span>
-          </a>
-          <mat-divider></mat-divider>
-          <a mat-list-item routerLink="/blog" routerLinkActive="active" (click)="isMobile && sidenav.close()">
-            <span translate>Blog</span>
-          </a>
-          <mat-divider></mat-divider>
-          <a mat-list-item routerLink="/work" routerLinkActive="active" (click)="isMobile && sidenav.close()">
-            <span translate>Work</span>
-          </a>
-          <mat-divider></mat-divider>
-          <a mat-list-item routerLink="/school" routerLinkActive="active" (click)="isMobile && sidenav.close()">
-            <span translate>School</span>
-          </a>
+          <div class="side_panel">
+            <mat-divider></mat-divider>
+            <a mat-list-item routerLink="/home" routerLinkActive="active" (click)="isMobile && sidenav.close()">
+              <span>Home</span>
+            </a>
+          </div>
+          <div class="side_panel">
+            <mat-divider></mat-divider>
+            <a mat-list-item routerLink="/about" routerLinkActive="active" (click)="isMobile && sidenav.close()">
+              <span>About</span>
+            </a>
+          </div>
+          <div class="side_panel">
+            <mat-divider></mat-divider>
+            <a mat-list-item routerLink="/dashboard" routerLinkActive="active" (click)="isMobile && sidenav.close()">
+              <span>Dashboard</span>
+            </a>
+          </div>
+          <div class="side_panel">
+            <mat-divider></mat-divider>
+            <a mat-list-item routerLink="/work" routerLinkActive="active" (click)="isMobile && sidenav.close()">
+              <span>Work</span>
+            </a>
+          </div>
+          <div class="side_panel">
+            <mat-divider></mat-divider>
+            <a mat-list-item routerLink="/school" routerLinkActive="active" (click)="isMobile && sidenav.close()">
+              <span>School</span>
+            </a>
+          </div>
+          <div class="side_panel">
+            <mat-divider></mat-divider>
+            <a mat-list-item routerLink="/projects" routerLinkActive="active" (click)="isMobile && sidenav.close()">
+              <span>Projects</span>
+            </a>
+          </div>
+          <div class="side_panel">
+            <mat-divider></mat-divider>
+            <a mat-list-item routerLink="/blog" routerLinkActive="active" (click)="isMobile && sidenav.close()">
+              <span>Blog</span>
+            </a>
+          </div>
+          <div class="side_panel">
+            <mat-divider></mat-divider>
+            <a mat-list-item routerLink="/finance" routerLinkActive="active" (click)="isMobile && sidenav.close()">
+              <span>Finance</span>
+            </a>
+          </div>
+          <div class="side_panel">
+            <mat-divider></mat-divider>
+            <a mat-list-item routerLink="/bills" routerLinkActive="active" (click)="isMobile && sidenav.close()">
+              <span>Bills</span>
+            </a>
+          </div>
+          <div class="side_panel">
+            <mat-divider></mat-divider>
+            <a mat-list-item routerLink="/accounts" routerLinkActive="active" (click)="isMobile && sidenav.close()">
+              <span>Accounts</span>
+            </a>
+          </div>
+          <div class="side_panel">
+            <mat-divider></mat-divider>
+            <a mat-list-item routerLink="/budget" routerLinkActive="active" (click)="isMobile && sidenav.close()">
+              <span>Budget</span>
+            </a>
+          </div>
+          <div class="side_panel">
+            <mat-divider></mat-divider>
+            <a mat-list-item routerLink="/distribution" routerLinkActive="active" (click)="isMobile && sidenav.close()">
+              <span>Distribution</span>
+            </a>
+          </div>
+          <div class="side_panel">
+            <mat-divider></mat-divider>
+            <a
+              mat-list-item
+              routerLink="/credit_repayment"
+              routerLinkActive="active"
+              (click)="isMobile && sidenav.close()"
+            >
+              <span>Credit Repayment</span>
+            </a>
+          </div>
+          <div class="side_panel">
+            <mat-divider></mat-divider>
+            <a
+              mat-list-item
+              routerLink="/email_generator"
+              routerLinkActive="active"
+              (click)="isMobile && sidenav.close()"
+            >
+              <span>Email Generator</span>
+            </a>
+          </div>
+          <div class="side_panel">
+            <mat-divider></mat-divider>
+            <a mat-list-item routerLink="/payoff" routerLinkActive="active" (click)="isMobile && sidenav.close()">
+              <span>Payoff</span>
+            </a>
+          </div>
         </mat-list>
       </nav>
     </mat-sidenav>

@@ -8,16 +8,21 @@ import { MaterialModule } from './material.module';
 
 import { CoreModule } from '@core';
 import { SharedModule } from '@shared';
-import { HomeModule } from './home/home.module';
+import { HomeModule } from './panels/home/home.module';
 import { ShellModule } from './shell/shell.module';
-import { AboutModule } from './about/about.module';
+import { AboutModule } from './panels/about/about.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { WorkModule } from './work/work.module';
-import { BlogModule } from './blog/blog.module';
-import { ProjectsModule } from './projects/projects.module';
-import { SchoolModule } from './school/school.module';
-
+import { WorkModule } from './panels/work/work.module';
+import { BlogModule } from './panels/blog/blog.module';
+import { ProjectsModule } from './panels/projects/projects.module';
+import { SchoolModule } from './panels/school/school.module';
+import { FinanceModule } from './panels/finance/finance.module';
+import { DashboardModule } from './panels/dashboard/dashboard.module';
+import { LayoutModule } from '@angular/cdk/layout';
+import { BillsModule } from './panels/bills/bills.module';
+import { PayoffModule } from './panels/payoff/payoff.module';
+import { DistributionModule } from './panels/distribution/distribution.module';
 @NgModule({
   imports: [
     BrowserModule,
@@ -35,7 +40,13 @@ import { SchoolModule } from './school/school.module';
     BlogModule,
     ProjectsModule,
     SchoolModule,
-    AppRoutingModule, // must be imported as the last module as it contains the fallback route
+    FinanceModule,
+    DashboardModule,
+    BillsModule,
+    PayoffModule,
+    DistributionModule,
+    AppRoutingModule,
+    LayoutModule, // must be imported as the last module as it contains the fallback route
   ],
   declarations: [AppComponent],
   providers: [],

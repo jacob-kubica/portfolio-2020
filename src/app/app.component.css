@@ -6,4 +6,10 @@
   -ms-flex: 1;
   flex: 1;
 }
+
 /*# sourceMappingURL=app.component.css.map */
+
+.container {
+  text-align: center;
+  padding: 1rem;
+}
